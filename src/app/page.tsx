@@ -1,7 +1,9 @@
-import Image from "next/image";
+import Main from "@/components/main/main";
 
 export default function Home() {
   return (
-    <main className="text-white"><h1>Testing</h1></main>
+    <main className="text-white">
+      <Main />
+    </main>
   );
 }
