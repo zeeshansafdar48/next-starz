@@ -443,32 +443,30 @@ function SecondaryButton() {
 }
 
 function Main() {
-  const { ref, focusKey, focusSelf } = useFocusable()
+  // const { ref, focusKey, focusSelf } = useFocusable()
 
 
-  useEffect(() => {
-    focusSelf();
-  }, [focusSelf]);
+  // useEffect(() => {
+  //   focusSelf();
+  // }, [focusSelf]);
 
   return (
-    // <AppContainer>
-    //   <GlobalStyle />
-    //   <Menu focusKey="MENU" />
-    //   <Content />
+    <AppContainer>
+      <GlobalStyle />
+      <Menu focusKey="MENU" />
+      <Content />
+    </AppContainer>
 
-
-    // </AppContainer>
-
-    <FocusContext.Provider value={focusKey}>
-      <div ref={ref} className='flex my-10 mx-10 gap-4'>
-        <PrimaryButton />
-        <SecondaryButton />
-      </div>
-      <div ref={ref} className='flex my-10 mx-10 gap-4'>
-        <PrimaryButton />
-        <SecondaryButton />
-      </div>
-    </FocusContext.Provider>
+    // <FocusContext.Provider value={focusKey}>
+    //   <div ref={ref} className='flex my-10 mx-10 gap-4'>
+    //     <PrimaryButton />
+    //     <SecondaryButton />
+    //   </div>
+    //   <div ref={ref} className='flex my-10 mx-10 gap-4'>
+    //     <PrimaryButton />
+    //     <SecondaryButton />
+    //   </div>
+    // </FocusContext.Provider>
 
   );
 }
