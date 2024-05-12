@@ -1,0 +1,61 @@
+.app-container {
+  @apply bg-primary w-[120rem] h-[67.5rem] flex flex-row;
+}
+
+.menu-wrapper {
+  @apply flex flex-1 flex-col items-center pt-10 max-w-60;
+}
+
+.menu-item-box {
+  @apply w-40 h-14 bg-[#b056ed] border-white border-solid box-border rounded-[7px] mb-9;
+}
+
+.content-wrapper {
+  @apply flex flex-1 flex-col overflow-hidden;
+}
+
+.content-title {
+  @apply text-white text-4xl font-semibold text-center mt-3 mb-2;
+}
+
+.selected-item-wrapper {
+  @apply flex flex-col items-center relative;
+}
+
+.selected-item-box {
+  @apply h-[17.625rem] w-[67.125rem] mb-9 rounded-lg;
+}
+.selected-item-title {
+  @apply absolute bottom-16 left-80 text-white text-2xl font-normal;
+}
+.scrolling-rows {
+  @apply overflow-y-auto overflow-x-hidden flex-shrink flex-grow;
+}
+
+.content-row-wrapper {
+  @apply mb-9;
+}
+
+.content-row-title {
+  @apply text-white mb-6 text-2xl font-bold pl-16;
+}
+
+.content-row-scrolling-wrapper {
+  @apply overflow-x-auto overflow-y-hidden flex-shrink flex-grow pl-16;
+}
+
+.content-row-scrolling-content {
+  @apply flex flex-row;
+}
+
+.asset-wrapper {
+  @apply mr-5 flex flex-col;
+}
+
+.asset-box {
+  @apply w-[14.0625rem] h-[7.9375rem] border-white border-solid box-border rounded-lg;
+}
+
+.asset-title {
+  @apply text-white mt-2.5 text-2xl font-normal;
+}
